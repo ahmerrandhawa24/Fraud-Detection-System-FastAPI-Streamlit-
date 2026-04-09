@@ -119,7 +119,7 @@ The final model enables **real-time fraud detection**.
 ---
 
 ## Tech Stack
-- Python 🐍  
+- Python 
 - Scikit-learn  
 - Pandas & NumPy  
 - Matplotlib & Seaborn  
