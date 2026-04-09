@@ -1,82 +1,144 @@
-Credit Card Fraud Detection using Machine Learning
-📌 Project Overview
+# Credit Card Fraud Detection using Machine Learning
 
-This project focuses on detecting fraudulent credit card transactions using machine learning techniques.
+## Project Overview
 
-The dataset contains anonymized transaction data with a highly imbalanced class distribution, where fraudulent transactions are significantly rarer than legitimate ones. The primary objective is to build a robust model that accurately identifies fraudulent transactions while minimizing false positives.
+This project focuses on detecting **fraudulent credit card transactions** using Machine Learning techniques.
 
-🎯 Key Capabilities
-Predict whether a transaction is Fraudulent or Legitimate
-Provide fraud probability score
-Identify important features influencing predictions
+The dataset contains anonymized transaction data with a **highly imbalanced class distribution**, where fraudulent transactions are significantly rarer than legitimate ones.
 
-This project demonstrates the practical application of AI in financial fraud detection systems.
+### Objective:
+Build a robust model that:
+- Accurately identifies fraudulent transactions  
+- Minimizes false positives  
+- Works effectively on imbalanced data  
 
-🧠 Machine Learning Workflow
-1️⃣ Data Collection
-Dataset sourced from Kaggle Credit Card Fraud Dataset
-Contains real-world transaction data
-Features anonymized using PCA transformation
-Includes both fraudulent and non-fraudulent transactions
-2️⃣ Data Understanding
+---
+
+## Key Capabilities
+
+- ✔ Predict whether a transaction is **Fraudulent or Legitimate**  
+- ✔ Provide **fraud probability score**  
+- ✔ Identify **important features influencing predictions**  
+
+This project demonstrates the **real-world application of AI in financial fraud detection systems**.
+
+---
+
+## Machine Learning Workflow
+
+### 1️⃣ Data Collection
+- Dataset sourced from **Kaggle Credit Card Fraud Dataset**  
+- Contains real-world transaction data  
+- Features anonymized using **PCA transformation**  
+- Includes both fraudulent and non-fraudulent transactions  
+
+---
+
+### 2️⃣ Data Understanding
 
 Initial exploration included:
+- Total number of transactions  
+- Fraud vs non-fraud distribution  
+- Feature distribution analysis  
+- Detection of missing values and anomalies  
 
-Total number of transactions
-Fraud vs non-fraud distribution
-Feature distribution analysis
-Detection of missing values and anomalies
-3️⃣ Data Preprocessing
+---
+
+### 3️⃣ Data Preprocessing
 
 Due to class imbalance, preprocessing is critical:
 
-Handling missing values
-Feature scaling (StandardScaler / Normalization)
-Handling imbalanced data using:
-SMOTE (Synthetic Minority Oversampling Technique)
-Undersampling
-Hybrid approaches
-4️⃣ Exploratory Data Analysis (EDA)
+- Handling missing values  
+- Feature scaling (StandardScaler / Normalization)  
+
+#### Handling imbalanced data using:
+- SMOTE (Synthetic Minority Oversampling Technique)  
+- Undersampling  
+- Hybrid approaches  
+
+---
+
+### 4️⃣ Exploratory Data Analysis (EDA)
 
 EDA was conducted to uncover patterns:
 
-Fraud vs non-fraud distribution
-Correlation between features
-Visualization of transaction behaviors
-Identification of important features
-5️⃣ Model Training
+- Fraud vs non-fraud distribution  
+- Correlation between features  
+- Visualization of transaction behaviors  
+- Identification of important features  
+
+---
+
+### 5️⃣ Model Training
 
 The following models were trained:
 
-Logistic Regression
-Random Forest
+- Logistic Regression  
+- Random Forest  
 
-Training was performed on:
+#### Training performed on:
+- Original imbalanced dataset  
+- SMOTE-balanced dataset  
+- Undersampled dataset  
 
-Original imbalanced dataset
-SMOTE-balanced dataset
-Undersampled dataset
-6️⃣ Model Evaluation
+---
 
-Evaluation metrics suitable for imbalanced datasets were used:
+### 6️⃣ Model Evaluation
 
-Accuracy
-Precision
-Recall
-F1-Score
-ROC-AUC
+Evaluation metrics suitable for imbalanced datasets:
 
-⚠️ Special emphasis was placed on Recall and Precision, as detecting fraud is more critical than overall accuracy.
+- Accuracy  
+- Precision  
+- Recall  
+- F1-Score  
+- ROC-AUC  
 
-🤖 AI Prediction System
+**Important:**  
+Special emphasis was placed on **Recall and Precision**, since detecting fraud is more critical than overall accuracy.
 
-The final model enables real-time fraud detection.
+---
 
-📥 Input Features
-Transaction features: V1, V2, ..., V28
-Transaction Amount
-Scaled/processed features
-📤 Output
-Fraud Probability Score
-Prediction: Fraud / Not Fraud
-Feature Importance (for interpretability)
+## AI Prediction System
+
+The final model enables **real-time fraud detection**.
+
+---
+
+### Input Features
+- Transaction features: `V1, V2, ..., V28`  
+- Transaction Amount  
+- Scaled/processed features  
+
+---
+
+### Output
+- Fraud Probability Score  
+- Prediction: **Fraud / Not Fraud**  
+- Feature Importance (for interpretability)  
+
+---
+
+## Tech Stack
+- Python 🐍  
+- Scikit-learn  
+- Pandas & NumPy  
+- Matplotlib & Seaborn  
+
+---
+
+## Use Cases
+
+- Banking fraud detection systems  
+- Payment gateway security  
+- Real-time transaction monitoring  
+
+---
+
+## Conclusion
+
+This project highlights how Machine Learning can be effectively used to:
+- Detect rare fraudulent events  
+- Handle highly imbalanced datasets  
+- Build reliable and interpretable fraud detection systems  
+
+---
